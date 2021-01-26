@@ -1,5 +1,6 @@
 @primaryColor: #e6af2e;
 @SecondaryColor: #222;
+@highlightColor: #6b0504;
 @minWidth: 100%;
 
 @breakpoints: {
@@ -93,15 +94,16 @@ ul.menu {
 
 ul.menu li {
   margin: 5px 2px;
-  background: #6b0504;
+  background: @highlightColor;
   border-radius: 2px;
   line-height: 1.7;
   padding: 5px;
   cursor: pointer;
 }
 
-ul.menu li:hover {
-  background: #a3320b;
+ul.menu li:hover {//color function
+  background: lighten(@highlightColor, 10%);
+  //background: darken(@highlightColor, 10%);
 }
 
 ul.menu li a {
@@ -170,8 +172,11 @@ ul.menu li a {
   .container {
     width: @minWidth;
   }
-  .song {
-    width: @breakpoints[desktop] / 3; //css result does not say 329.666666667px
+  .song {//math function
+    //width: ceil(@breakpoints[desktop] / 3); 
+    
+    //ArgumentError: Error evaluating function `ceil`: argument must be a number
+    //doesn't round it up to 330px
   }
 }
 
