@@ -101,9 +101,13 @@ ul.menu li {
   cursor: pointer;
 }
 
-ul.menu li:hover {//color function
+//execute block when lightness of highlight color is < 50%
+ul.menu li:hover when (lightness(@highlightColor) < 50%) {
   background: lighten(@highlightColor, 10%);
-  //background: darken(@highlightColor, 10%);
+}
+
+ul.menu li:hover when (lightness(@highlightColor) >= 50%) {
+  background: darken(@highlightColor, 10%);
 }
 
 ul.menu li a {
@@ -115,7 +119,8 @@ ul.menu li a {
   display: block;
 }
 
-.song {
+//.song removed in css because minwidth dosen't use px as unit
+.song when (isUnit(@minWidth, "px")) {
   width: 175px;
   border-radius: 10px;
   padding: 6px;
