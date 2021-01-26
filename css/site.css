@@ -148,7 +148,7 @@ ul.menu li a {
     width: 989px;
   }
   .song {
-    width: 600px;
+    width: 989px / 3;
   }
 }
 .foo {
