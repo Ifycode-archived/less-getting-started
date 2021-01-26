@@ -1,0 +1,8 @@
+/*Width 200px (No variable)*/
+p {
+  width: 200px;
+}
+/*using variable*/
+p {
+  width: 200px;
+}
