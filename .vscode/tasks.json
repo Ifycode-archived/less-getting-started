@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "less",
+			"problemMatcher": [],
+			"label": "npm: less",
+			"detail": "lessc css/site.less css/site.css",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
