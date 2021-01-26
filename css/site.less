@@ -1,5 +1,6 @@
 @primaryColor: #e6af2e;
 @SecondaryColor: #222;
+@minWidth: 100%;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 html,
@@ -37,7 +38,7 @@ h6 {
 /* Override the .audioplayer properties */
 
 .info-img {
-  max-width: 100%;
+  max-width: @minWidth;
   border: 1px @SecondaryColor solid;
   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
   margin: 1px;
@@ -46,7 +47,7 @@ h6 {
 
 .container {
   font-weight: 100;
-  width: 100%;
+  width: @minWidth;
   margin: 0 auto;
   color: @SecondaryColor;
   background-color: @primaryColor;
@@ -155,11 +156,20 @@ ul.menu li a {
 }
 
 @media only screen and (min-width: 989px) {
+  
+  @minWidth: 989px;
 
   .container {
-    width: 989px;
+    width: @minWidth;
   }
   .song {
     width: 600px;
   }
 }
+
+
+//dummy class
+.foo {
+  width: @minWidth;
+}
+
