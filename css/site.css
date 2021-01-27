@@ -133,7 +133,7 @@ ul.menu li a:focus {
 }
 .audioplayer .audioplayer-bar {
   display: none;
-  width: 0;
+  width: 200px;
 }
 .audioplayer .audioplayer-time.audioplayer-time-duration {
   display: none;

@@ -166,7 +166,9 @@ ul.menu {
 
 .audioplayer .audioplayer-bar {
   display: none;
-  width: 0;
+  width: .multi(10px, 20px)[@result];
+
+  //width: .multi(10, 20)[@result]; //without px unit
 }
 
 .audioplayer .audioplayer-time.audioplayer-time-duration {
