@@ -1,5 +1,6 @@
 @import "reset";
 @import "colors";
+@import "extend";
 
 @minWidth: 100%;
 
@@ -7,7 +8,7 @@
   desktop: 989px;
   tablet: 767px;
   phone: 480px;
-}
+};
 
 @import (css) url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 
@@ -35,7 +36,7 @@ h6 {
 .@{prefix}-info-img {
   max-width: @minWidth;
   border: 1px @SecondaryColor solid;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  @box-shadow();
   margin: 1px;
   border-radius: 2px;
 }
@@ -131,7 +132,7 @@ ul.menu {
   margin: 2px 0;
   background-color: rgba(255, 255, 255, .25);
   border: 1px @SecondaryColor solid;
-  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  @box-shadow();
 }
 
 .song .title {
