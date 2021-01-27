@@ -23,7 +23,8 @@ The value will change if call has argument.
 */
 
 .box-me-2nd(@width: 1px, @color: @SecondaryColor, @style: solid) {
-    border: @width @style @color;
+    border: @arguments; //short form for all three arguments
+    border-radius: @width; //only one
 }
 
 .multi(@x, @y) {

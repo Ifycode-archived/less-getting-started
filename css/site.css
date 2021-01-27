@@ -41,7 +41,8 @@ h6 {
 /* Override the .audioplayer properties */
 .ps-prefix-info-img {
   max-width: 100%;
-  border: 1px solid #222;
+  border: 1px #222 solid;
+  border-radius: 1px;
   background: blue;
   margin: 1px;
   border-radius: 2px;
@@ -87,7 +88,7 @@ ul.menu {
   display: flex;
 }
 ul.menu li {
-  border: 2px dotted #ffffff;
+  border: 2px #ffffff dotted;
   margin: 5px 2px;
   background: #6b0504;
   border-radius: 2px;
