@@ -11,6 +11,7 @@
 };
 
 @import (css) url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
 .font-info() {
   font-weight: 400;
 }
@@ -21,7 +22,10 @@
 
 html,
 body {
-  .font-info(); //adds both (font) family & weight
+  #ps.font-info(); //only displays the font info inside #ps
+  
+  //or use: #ps > .font-info();
+  
   margin: 0;
   padding: 0;
   background: @SecondaryColor;
