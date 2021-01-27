@@ -84,21 +84,26 @@ ul.menu {
     line-height: 1.7;
     padding: 5px;
     cursor: pointer;
+
+    //parent selector - &
+    &:hover when (lightness(@highlightColor) < 50%) {
+      background: lighten(@highlightColor, 10%);
+    }
+
+    &:hover when (lightness(@highlightColor) >= 50%) {
+      background: darken(@highlightColor, 10%);
+    }
+
+    a {
+      text-decoration: none;
+      color: #ddd;
+
+      //parent selector - &
+      &:hover, &:focus {
+        color: gold;
+      }
+    }
   }
-}
-
-//execute block when lightness of highlight color is < 50%
-ul.menu li:hover when (lightness(@highlightColor) < 50%) {
-  background: lighten(@highlightColor, 10%);
-}
-
-ul.menu li:hover when (lightness(@highlightColor) >= 50%) {
-  background: darken(@highlightColor, 10%);
-}
-
-ul.menu li a {
-  text-decoration: none;
-  color: #ddd;
 }
 
 #main {
