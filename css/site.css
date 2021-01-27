@@ -13,6 +13,15 @@ p {
   margin: 0;
   padding: 0;
 }
+/*
+.box-me(@width: 1px) {
+
+}
+
+call without argument to display 1px:
+
+The value will change if call has argument.
+*/
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +41,7 @@ h6 {
 /* Override the .audioplayer properties */
 .ps-prefix-info-img {
   max-width: 100%;
-  border: 1px #222 solid;
+  border: 1px solid #222;
   background: blue;
   margin: 1px;
   border-radius: 2px;
@@ -78,6 +87,7 @@ ul.menu {
   display: flex;
 }
 ul.menu li {
+  border: 2px dotted #ffffff;
   margin: 5px 2px;
   background: #6b0504;
   border-radius: 2px;
@@ -109,13 +119,13 @@ ul.menu li a:focus {
 .song when (isUnit(@minWidth, "px")) {
 */
 .song {
+  border: 2px solid black;
   width: 175px;
   min-width: 22em;
   border-radius: 10px;
   padding: 6px;
   margin: 2px 0;
   background-color: rgba(255, 255, 255, 0.25);
-  border: 1px #222 solid;
   background: blue;
 }
 .song .title {
