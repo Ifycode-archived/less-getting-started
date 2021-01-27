@@ -87,6 +87,11 @@ ul.menu li a:hover,
 ul.menu li a:focus {
   color: gold;
 }
+@media screen and (min-width: 767px) {
+  ul.menu li {
+    background: blue;
+  }
+}
 #main {
   display: block;
 }
