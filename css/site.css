@@ -22,6 +22,18 @@ call without argument to display 1px:
 
 The value will change if call has argument.
 */
+.col-1 {
+  width: 50px;
+}
+.col-2 {
+  width: 100px;
+}
+.col-3 {
+  width: 150px;
+}
+.col-4 {
+  width: 200px;
+}
 html,
 body {
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;

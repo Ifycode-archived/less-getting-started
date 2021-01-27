@@ -12,6 +12,15 @@
 
 @import (css) url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
 
+
+.for(@x, 4) {
+  .col-@{x} {
+    width: @x * 50px;
+  }
+}
+
+
+
 .font-info() {
   font-weight: 400;
 }
