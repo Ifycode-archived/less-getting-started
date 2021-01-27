@@ -41,7 +41,15 @@ h6 {
   border-radius: 2px;
 }
 
+//see css file for difference
+
+#shared() {
+  border: 5px solid @highlightColor;
+  //add other styles
+}
+
 .container {
+  #shared();
   font-weight: 100;
   width: @minWidth;
   margin: 0 auto;
@@ -65,7 +73,8 @@ header {
   margin-bottom: 2px;
 }
 
-footer {
+footer { //add .container content to footer
+  .container();
   justify-content: center;
   margin-top: 2px;
 }

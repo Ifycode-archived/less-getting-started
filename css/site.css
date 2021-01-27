@@ -37,6 +37,7 @@ h6 {
   border-radius: 2px;
 }
 .container {
+  border: 5px solid #6b0504;
   font-weight: 100;
   width: 100%;
   margin: 0 auto;
@@ -58,6 +59,13 @@ header {
   margin-bottom: 2px;
 }
 footer {
+  border: 5px solid #6b0504;
+  font-weight: 100;
+  width: 100%;
+  margin: 0 auto;
+  color: #222;
+  background-color: #e6af2e;
+  padding: 5px;
   justify-content: center;
   margin-top: 2px;
 }
