@@ -32,3 +32,17 @@ The value will change if call has argument.
 .multi(@x, @y) {
     @result: @x * @y;
 }
+
+
+.fore-color() {
+   background: @highlightColor;
+}
+
+//example: extending mixins with guards
+.fore-color() when (lightness(@primaryColor) > 50%) {
+    color: white;
+}
+
+.fore-color() when (lightness(@primaryColor) <= 50%) {
+    color: black;
+}
