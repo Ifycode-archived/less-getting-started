@@ -1,3 +1,4 @@
+@plugin "../js/create-plugin.js";
 @import "reset";
 @import "colors";
 @import "extend";
@@ -38,6 +39,8 @@ body {
   margin: 0;
   padding: 0;
   background: @SecondaryColor;
+  z-index: returnTen();
+  min-height: average(100, 250, 500, 400);
 }
 
 h1,
