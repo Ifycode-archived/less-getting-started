@@ -177,6 +177,9 @@ ul.menu li a:focus {
   .container {
     width: 989px;
   }
+  .song {
+    width: 330px;
+  }
 }
 .foo {
   width: 100%;

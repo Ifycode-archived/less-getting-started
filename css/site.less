@@ -226,10 +226,8 @@ ul.menu {
     width: @minWidth;
   }
   .song {//math function
-    //width: ceil(@breakpoints[desktop] / 3); 
-    
-    //ArgumentError: Error evaluating function `ceil`: argument must be a number
-    //doesn't round it up to 330px
+    width: ceil((@breakpoints[desktop] / 3)); 
+    //width: (@breakpoints[desktop] / 3); 
   }
 }
 
