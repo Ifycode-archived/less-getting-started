@@ -114,9 +114,18 @@ ul.menu {
   display: block;
 }
 
+/*
 //.song removed in css because minwidth dosen't use px as unit
 .song when (isUnit(@minWidth, "px")) {
+*/
+
+
+.song {
+  //cnange value of minWidth within .song block
+  @minWidth: 22em;
+
   width: 175px;
+  min-width: @minWidth;
   border-radius: 10px;
   padding: 6px;
   margin: 2px 0;
